@@ -61,10 +61,13 @@ meu_insp = int(input("Qual inspermón você deseja ser?"))
 insp_desejado = inspermons[meu_insp]
 
 while True:
-    pergunta=input("Você deseja passear ou dormir? ")
+    pergunta=input("Você deseja passear ou dormir,ou ir ao insperdex?")
     if pergunta == "dormir":
         print("Até mais!")
         break
+    elif pergunta == "insperdex":
+        a = ("você possue os seguintes pokemons {0}".format(insperdéx))
+        print(a)
     elif pergunta == "passear":
         print("Enfrente a batalha que está por vir!")
         insp_inimigo=random.choice(inspermons_novos)
@@ -85,7 +88,7 @@ while True:
                 print("Voce venceu!")
                 insperdéx.append(insp_inimigo["nome"])
                 print("Seu insperdèx agora contém {0}".format(insperdéx))
-
+                
                 
                
                 
